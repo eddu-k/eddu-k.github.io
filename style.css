@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.topnav a {
+    float: left;
+    color: gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: aqua;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: black;
+    text-decoration: double;
+    text-shadow: goldenrod;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.dp {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    float: right;
+    width: 900px;
+    height: 600px;
+    
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container1 {
+    position: relative;
+    width: 100%;
+    max-width: 77px;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  
+  /* When you mouse over the container, fade in the overlay icon*/
+  .container1:hover .overlay {
+    
+  }
+  
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+  .icon {
+    color: white;
+    font-size: 100px;
+    
+  }
+  
+  /* When you move the mouse over the icon, change color */
+  .fa-user:hover {
+    color: #eee;
+  }
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    color: gold;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    column-count: 2;
+    column-gap: 170px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+    text-align: center;
+ }
