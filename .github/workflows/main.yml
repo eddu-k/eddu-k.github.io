@@ -1,0 +1,17 @@
+name: Deploy to Development
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Development
+        run: echo "Deploying to Development Environment"
+        # Add actual deployment steps (e.g., deploy to a dev server)
